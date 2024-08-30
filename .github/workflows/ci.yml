@@ -32,7 +32,7 @@ jobs:
 
     - name: 'Install Dependencies'
       run: npm install
-    
+
     - name: 'Run Tests'
       run: npm run test
 
@@ -45,10 +45,10 @@ jobs:
         # Define the working directory for all run steps in the workflow
         working-directory: ./web
     runs-on: ubuntu-latest
-    steps:    
-    - uses: actions/checkout@v2
+    steps:
+    - uses: actions/checkout@v4
       name: 'Checkout repository'
-    
+
     - name: 'Install Dependencies'
       run: npm install
 
